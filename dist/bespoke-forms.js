@@ -1,5 +1,5 @@
 /*!
- * bespoke-forms v0.0.0
+ * bespoke-forms v0.1.0
  * https://github.com/markdalgleish/bespoke-forms
  *
  * Copyright 2013, Mark Dalgleish
