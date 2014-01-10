@@ -20,7 +20,8 @@
 
           document.body.appendChild(parent);
 
-          return (deck = bespoke.horizontal.from(parent, {
+          return (deck = bespoke.from(parent, {
+            keys: true,
             forms: true
           }));
         };

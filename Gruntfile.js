@@ -45,7 +45,8 @@ module.exports = function(grunt) {
       options: {
         vendor: [
           'node_modules/simulant/release/0.1.0/simulant.js',
-          'node_modules/bespoke/dist/bespoke.js'
+          'node_modules/bespoke/dist/bespoke.js',
+          'node_modules/bespoke-keys/dist/bespoke-keys.js'
         ],
         specs: 'spec/*Spec.js',
         helpers: 'spec/*Helper.js'

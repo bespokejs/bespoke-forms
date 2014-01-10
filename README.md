@@ -20,7 +20,7 @@ First, include both `bespoke.js` and `bespoke-forms.js` in your page.
 Then, simply include the plugin when instantiating your presentation.
 
 ```js
-bespoke.horizontal.from('article', {
+bespoke.from('article', {
   forms: true
 });
 ```
