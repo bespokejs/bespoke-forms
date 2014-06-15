@@ -1,7 +1,11 @@
 {
   "name": "bespoke-forms",
   "version": "0.1.0",
+  "main": "./dist/bespoke-loop.js",
+  "ignore": [
+    "**/.*"
+  ],
   "dependencies": {
-    "bespoke.js": ">=0.3.0"
+    "bespoke.js": "^1.0.0"
   }
 }

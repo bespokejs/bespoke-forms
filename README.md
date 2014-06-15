@@ -1,4 +1,4 @@
-[![Build Status](https://secure.travis-ci.org/markdalgleish/bespoke-forms.png?branch=master)](https://travis-ci.org/markdalgleish/bespoke-forms)
+[![Build Status](https://secure.travis-ci.org/markdalgleish/bespoke-forms.png?branch=master)](https://travis-ci.org/markdalgleish/bespoke-forms) [![Coverage Status](https://coveralls.io/repos/markdalgleish/bespoke-forms/badge.png)](https://coveralls.io/r/markdalgleish/bespoke-forms)
 
 # bespoke-forms
 
@@ -15,23 +15,28 @@ Download the [production version][min] or the [development version][max], or use
 
 ## Usage
 
-First, include both `bespoke.js` and `bespoke-forms.js` in your page.
+This plugin is shipped in a [UMD format](https://github.com/umdjs/umd), meaning that it is available as a CommonJS/AMD module or browser global.
 
-Then, simply include the plugin when instantiating your presentation.
+For example, when using CommonJS modules:
 
 ```js
-bespoke.from('article', {
-  forms: true
-});
+var bespoke = require('bespoke'),
+  forms = require('bespoke-forms');
+
+bespoke.from('article', [
+  forms()
+]);
+```
+
+When using browser globals:
+
+```js
+bespoke.from('article', [
+  bespoke.plugins.forms()
+]);
 ```
 
 ## Package managers
-
-### Bower
-
-```bash
-$ bower install bespoke-forms
-```
 
 ### npm
 
@@ -39,11 +44,10 @@ $ bower install bespoke-forms
 $ npm install bespoke-forms
 ```
 
-The bespoke-forms npm package is designed for use with [browserify](http://browserify.org/), e.g.
+### Bower
 
-```js
-require('bespoke');
-require('bespoke-forms');
+```bash
+$ bower install bespoke-forms
 ```
 
 ## Credits
