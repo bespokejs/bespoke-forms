@@ -41,10 +41,6 @@ describe("bespoke-forms", function() {
         which: 39,
         bubbles: true
       });
-    },
-
-    isFirstSlideActive = function() {
-      return deck.slides[0].classList.contains('bespoke-active');
     };
 
   describe("deck.slide", function() {
@@ -55,7 +51,7 @@ describe("bespoke-forms", function() {
 
       it("should not go to the next slide when pressing right arrow inside input", function() {
         right('input');
-        expect(isFirstSlideActive()).toBe(true);
+        expect(deck.slide()).toBe(0);
       });
 
     });
@@ -66,7 +62,7 @@ describe("bespoke-forms", function() {
 
       it("should not go to the next slide when pressing right arrow inside select", function() {
         right('select');
-        expect(isFirstSlideActive()).toBe(true);
+        expect(deck.slide()).toBe(0);
       });
 
     });
@@ -77,7 +73,7 @@ describe("bespoke-forms", function() {
 
       it("should not go to the next slide when pressing right arrow inside textarea", function() {
         right('textarea');
-        expect(isFirstSlideActive()).toBe(true);
+        expect(deck.slide()).toBe(0);
       });
 
     });
@@ -88,7 +84,7 @@ describe("bespoke-forms", function() {
 
       it("should not go to the next slide when pressing right arrow inside an editable element", function() {
         right('[contenteditable]');
-        expect(isFirstSlideActive()).toBe(true);
+        expect(deck.slide()).toBe(0);
       });
 
     });
