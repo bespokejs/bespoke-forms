@@ -1,10 +1,9 @@
 Function.prototype.bind = Function.prototype.bind || require('function-bind');
 
-var bespoke = require('bespoke');
-var keys = require('bespoke-keys');
-var forms = require('../../lib-instrumented/bespoke-forms.js');
-
-require('simulant/simulant');
+var bespoke = require('bespoke'),
+  keys = require('bespoke-keys'),
+  forms = require('../../lib-instrumented/bespoke-forms.js'),
+  simulant = require('simulant');
 
 describe("bespoke-forms", function() {
 
